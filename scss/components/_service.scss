@@ -1,0 +1,136 @@
+.service {
+  background: #111827;
+  .container {
+    align-items: center;
+    height: 759px;
+    @include desktop-small {
+      height: 1550px;
+    }
+  }
+
+  .container2 {
+    display: flex;
+    gap: 30px;
+    @include desktop-small {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    color: #6b7280;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 461px;
+    padding-bottom: 56px;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: $ff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 96px;
+    padding-bottom: 24px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  .job1 {
+    background: $body-bg;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+      font-family: $ff;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 136px;
+      margin-bottom: 16px;
+      margin-left: 105px;
+      margin-right: 105px;
+      margin-top: 32px;
+    }
+
+    &__text {
+      color: #6b7280;
+      font-family: $ff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px;
+    }
+  }
+  .job2 {
+    background: $body-bg;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+      font-family: $ff;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 160px;
+      margin-bottom: 16px;
+      margin-left: 105px;
+      margin-right: 105px;
+      margin-top: 32px;
+    }
+
+    &__text {
+      color: #6b7280;
+      font-family: $ff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px;
+    }
+  }
+  .job3 {
+    background: $body-bg;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+      font-family: $ff;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 204px;
+      margin-bottom: 16px;
+      margin-left: 70px;
+      margin-right: 70px;
+      margin-top: 32px;
+    }
+
+    &__text {
+      color: #6b7280;
+      font-family: $ff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}

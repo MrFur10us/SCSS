@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #020617;
+  color: #fff; }
+
+.container {
+  max-width: calc(1108px + 40px);
+  padding: 0 20px;
+  margin-inline: auto; }
+
+.btn {
+  padding: 8px 20px;
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #EAB308;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  transition: 0.2s all ease-out; }
+  .btn:hover {
+    background: #f8c72d; }
+
+.header {
+  padding: 16px 0; }
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; }
+  .header__logo {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex; }
+    .header__logo span {
+      color: #EAB308; }
+  .header__menu {
+    display: none; }
+    @media (max-width: 992px) {
+      .header__menu {
+        display: inline-block; } }
+  .header__nav {
+    display: flex;
+    gap: 27px;
+    align-items: center; }
+    @media (max-width: 992px) {
+      .header__nav {
+        position: fixed;
+        min-width: 250px;
+        width: 30%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        background: #EAB308;
+        justify-content: center;
+        transition: 0.2s all ease-out;
+        transform: translateX(-120%); }
+        .header__nav.is-active {
+          transform: translateX(0); } }
+  .header__a {
+    color: #9CA3AF;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s all ease-out; }
+    @media (max-width: 992px) {
+      .header__a {
+        color: #000; } }
+    .header__a.is-active, .header__a:hover {
+      color: #fff; }
+
+.welcome {
+  padding: 96px 0;
+  padding-right: 18px;
+  background: #111827; }
+  @media (max-width: 576px) {
+    .welcome {
+      padding: 60px 0; } }
+  .welcome .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; }
+    @media (max-width: 576px) {
+      .welcome .container {
+        flex-direction: column-reverse; } }
+  .welcome__hello {
+    color: #EAB308;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 24px; }
+  .welcome__name {
+    color: #F3F4F6;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 8px; }
+  .welcome__role {
+    color: #6B7280;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 24px;
+    max-width: 466px; }
+  .welcome__img {
+    flex-shrink: 0; }
+    @media (max-width: 992px) {
+      .welcome__img {
+        flex-shrink: inherit; } }
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 704px; }
+  @media (max-width: 576px) {
+    .about .container {
+      flex-direction: column;
+      height: 870px; } }
+@media (max-width: 576px) {
+  .about__img {
+    margin-top: 70px; } }
+.about__title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 32px; }
+  .about__title span {
+    color: #EAB308; }
+.about_img {
+  margin-top: 32px; }
+.about__text1 {
+  color: #6b7280;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 461px;
+  margin-bottom: 18px; }
+.about__text2 {
+  color: #6b7280;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 509px;
+  margin-bottom: 40px; }
+.about__btn {
+  padding: 16px 20px; }
+@media (max-width: 576px) {
+  .about {
+    margin-bottom: 50px; } }
+
+.service {
+  background: #111827; }
+  .service .container {
+    align-items: center;
+    height: 759px; }
+    @media (max-width: 1200px) {
+      .service .container {
+        height: 1550px; } }
+  .service .container2 {
+    display: flex;
+    gap: 30px; }
+    @media (max-width: 1200px) {
+      .service .container2 {
+        flex-direction: column; } }
+  .service__text {
+    color: #6b7280;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 461px;
+    padding-bottom: 56px; }
+  .service__title {
+    color: #fff;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 96px;
+    padding-bottom: 24px; }
+    .service__title span {
+      color: #EAB308; }
+  .service .job1 {
+    background: #020617;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center; }
+    .service .job1__title {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 136px;
+      margin-bottom: 16px;
+      margin-left: 105px;
+      margin-right: 105px;
+      margin-top: 32px; }
+    .service .job1__text {
+      color: #6b7280;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px; }
+  .service .job2 {
+    background: #020617;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center; }
+    .service .job2__title {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 160px;
+      margin-bottom: 16px;
+      margin-left: 105px;
+      margin-right: 105px;
+      margin-top: 32px; }
+    .service .job2__text {
+      color: #6b7280;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px; }
+  .service .job3 {
+    background: #020617;
+    width: 350px;
+    height: 342px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center; }
+    .service .job3__title {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      max-width: 204px;
+      margin-bottom: 16px;
+      margin-left: 70px;
+      margin-right: 70px;
+      margin-top: 32px; }
+    .service .job3__text {
+      color: #6b7280;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+      margin-left: 40px;
+      margin-right: 40px; }
+
+/*# sourceMappingURL=style.css.map */
