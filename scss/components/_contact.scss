@@ -1,0 +1,113 @@
+.contact {
+  &__top {
+  }
+
+  &__main {
+  }
+}
+.container2 {
+  margin-bottom: 160px;
+  display: flex;
+  @include desktop-small {
+    flex-direction: column;
+  }
+}
+.top {
+  &__title {
+    text-align: center;
+    font-family: $ff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 85px;
+    padding-bottom: 24px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__text {
+    color: #6b7280;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 685px;
+    margin-inline: auto;
+    margin-bottom: 56px;
+  }
+}
+.main {
+  &__data {
+  }
+
+  &__inputs {
+    margin-top: 56px;
+  }
+}
+.address,
+.phone,
+.email,
+.website {
+  color: #fff;
+  font-family: $ff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  margin-right: 223px;
+  span {
+    color: $primary-color;
+  }
+}
+
+.address {
+  max-width: 370px;
+}
+
+.field {
+  &__textarea {
+    display: block;
+    outline: 0;
+    border: 0;
+    padding: 12px;
+    background: #1f2937;
+    min-height: 139px;
+    height: 160px;
+    resize: none;
+    color: #f3f4f6;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 32px;
+    max-width: 540px;
+    width: 100%;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.input {
+  display: block;
+  letter-spacing: 0.16px;
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  background: #1f2937;
+  padding: 12px;
+  color: #fff;
+  border: 1px solid transparent;
+  transform: 0.2s all ease-in;
+  font-family: $ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+  margin-bottom: 32px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}

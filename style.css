@@ -182,7 +182,8 @@ body {
         height: 1550px; } }
   .service .container2 {
     display: flex;
-    gap: 30px; }
+    gap: 30px;
+    padding-top: 20px; }
     @media (max-width: 1200px) {
       .service .container2 {
         flex-direction: column; } }
@@ -204,76 +205,27 @@ body {
     padding-bottom: 24px; }
     .service__title span {
       color: #EAB308; }
-  .service .job1 {
-    background: #020617;
-    width: 350px;
-    height: 342px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items: center; }
-    .service .job1__title {
-      font-family: "Lexend Deca", sans-serif;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 41px;
-      max-width: 136px;
-      margin-bottom: 16px;
-      margin-left: 105px;
-      margin-right: 105px;
-      margin-top: 32px; }
-    .service .job1__text {
-      color: #6b7280;
-      font-family: "Lexend Deca", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27px;
-      max-width: 286px;
-      margin-left: 40px; }
-  .service .job2 {
-    background: #020617;
-    width: 350px;
-    height: 342px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items: center; }
-    .service .job2__title {
-      font-family: "Lexend Deca", sans-serif;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 41px;
-      max-width: 160px;
-      margin-bottom: 16px;
-      margin-left: 105px;
-      margin-right: 105px;
-      margin-top: 32px; }
-    .service .job2__text {
-      color: #6b7280;
-      font-family: "Lexend Deca", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27px;
-      max-width: 286px;
-      margin-left: 40px; }
+  .service .job1,
+  .service .job2,
   .service .job3 {
     background: #020617;
     width: 350px;
-    height: 342px;
     border-radius: 12px;
     margin-bottom: 30px;
     text-align: center;
     align-items: center; }
+    .service .job1__title,
+    .service .job2__title,
     .service .job3__title {
       font-family: "Lexend Deca", sans-serif;
       font-size: 26px;
       font-weight: 700;
       line-height: 41px;
-      max-width: 204px;
       margin-bottom: 16px;
-      margin-left: 70px;
-      margin-right: 70px;
+      margin-left: 105px;
       margin-top: 32px; }
+    .service .job1__text,
+    .service .job2__text,
     .service .job3__text {
       color: #6b7280;
       font-family: "Lexend Deca", sans-serif;
@@ -282,6 +234,288 @@ body {
       line-height: 27px;
       max-width: 286px;
       margin-left: 40px;
-      margin-right: 40px; }
+      margin-bottom: 31px; }
+    .service .job1 .job1__title,
+    .service .job2 .job1__title,
+    .service .job3 .job1__title {
+      max-width: 136px; }
+    .service .job1 .job1__img,
+    .service .job2 .job1__img,
+    .service .job3 .job1__img {
+      padding-top: 31px; }
+    .service .job1 .job2__title,
+    .service .job2 .job2__title,
+    .service .job3 .job2__title {
+      max-width: 160px;
+      margin-left: 98px; }
+    .service .job1 .job2__img,
+    .service .job2 .job2__img,
+    .service .job3 .job2__img {
+      padding-top: 31px; }
+    .service .job1 .job3__title,
+    .service .job2 .job3__title,
+    .service .job3 .job3__title {
+      max-width: 204px;
+      margin-left: 74px; }
+    .service .job1 .job3__img,
+    .service .job2 .job3__img,
+    .service .job3 .job3__img {
+      padding-top: 31px; }
+
+.portfolio .container {
+  height: 1006px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  @media (max-width: 1200px) {
+    .portfolio .container {
+      height: 1100px; } }
+.portfolio__title {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+  padding-top: 96px;
+  padding-bottom: 24px; }
+  .portfolio__title span {
+    color: #EAB308; }
+.portfolio__text1 {
+  color: #9CA3AF;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 461px;
+  margin-inline: auto;
+  padding-bottom: 80px; }
+.portfolio__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 31px; }
+  @media (max-width: 1200px) {
+    .portfolio__img {
+      display: block; } }
+.portfolio .top__img {
+  margin-left: -20px; }
+  @media (max-width: 1200px) {
+    .portfolio .top__img {
+      margin-left: 7px; } }
+.portfolio .secondary__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 29px; }
+  @media (max-width: 1200px) {
+    .portfolio .secondary__img {
+      display: none; } }
+
+.experience {
+  background: #111827; }
+  .experience .container {
+    align-items: center;
+    height: 714px; }
+    @media (max-width: 1200px) {
+      .experience .container {
+        height: 1550px;
+        flex-direction: column; } }
+  .experience .container2 {
+    display: flex;
+    gap: 29px; }
+    @media (max-width: 1200px) {
+      .experience .container2 {
+        flex-direction: column; } }
+  .experience__title {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 85px;
+    padding-bottom: 24px; }
+    .experience__title span {
+      color: #EAB308; }
+  .experience__text2 {
+    color: #9CA3AF;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 730px;
+    padding-bottom: 80px; }
+  .experience .xp1,
+  .experience .xp2,
+  .experience .xp3 {
+    background: #020617;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 366px; }
+    .experience .xp1__header,
+    .experience .xp2__header,
+    .experience .xp3__header {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px; }
+    .experience .xp1__title,
+    .experience .xp2__title,
+    .experience .xp3__title {
+      color: #eab308;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px; }
+    .experience .xp1__subtitle,
+    .experience .xp2__subtitle,
+    .experience .xp3__subtitle {
+      color: #d1d5db;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 27px; }
+    .experience .xp1__text,
+    .experience .xp2__text,
+    .experience .xp3__text {
+      color: #6b7280;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px; }
+  .experience .xp1 {
+    padding: 32px; }
+    .experience .xp1__text {
+      margin-bottom: 20px; }
+  .experience .xp2 {
+    padding: 32px; }
+    .experience .xp2__text {
+      max-width: 272px; }
+      .experience .xp2__text .h1 {
+        color: #6b7280;
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px; }
+    @media (max-width: 1200px) {
+      .experience .xp2 {
+        padding: -2px; } }
+  .experience .xp3 {
+    padding: 32px; }
+    .experience .xp3__text {
+      margin-bottom: 20px; }
+
+.container2 {
+  margin-bottom: 160px;
+  display: flex; }
+  @media (max-width: 1200px) {
+    .container2 {
+      flex-direction: column; } }
+
+.top__title {
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+  padding-top: 85px;
+  padding-bottom: 24px; }
+  .top__title span {
+    color: #EAB308; }
+.top__text {
+  color: #6b7280;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 685px;
+  margin-inline: auto;
+  margin-bottom: 56px; }
+
+.main__inputs {
+  margin-top: 56px; }
+
+.address,
+.phone,
+.email,
+.website {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 41px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  margin-right: 223px; }
+  .address span,
+  .phone span,
+  .email span,
+  .website span {
+    color: #EAB308; }
+
+.address {
+  max-width: 370px; }
+
+.field__textarea {
+  display: block;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  background: #1f2937;
+  min-height: 139px;
+  height: 160px;
+  resize: none;
+  color: #f3f4f6;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+  margin-bottom: 32px;
+  max-width: 540px;
+  width: 100%; }
+  .field__textarea::placeholder {
+    color: #fff; }
+
+.input {
+  display: block;
+  letter-spacing: 0.16px;
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  background: #1f2937;
+  padding: 12px;
+  color: #fff;
+  border: 1px solid transparent;
+  transform: 0.2s all ease-in;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 41px;
+  margin-bottom: 32px; }
+  .input::placeholder {
+    color: #fff; }
+
+.footer .container {
+  text-align: center; }
+
+.text {
+  color: #9ca3af;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 685px;
+  margin-inline: auto;
+  margin-bottom: 56px; }
+
+.title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px; }
+
+.icons__section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px; }
 
 /*# sourceMappingURL=style.css.map */

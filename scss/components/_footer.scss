@@ -1,0 +1,32 @@
+.footer {
+  .container {
+    text-align: center;
+  }
+}
+
+.text {
+  color: #9ca3af;
+  font-family: $ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 685px;
+  margin-inline: auto;
+  margin-bottom: 56px;
+}
+
+.title {
+  font-family: $ff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.icons {
+    &__section {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 56px;
+  }
+}

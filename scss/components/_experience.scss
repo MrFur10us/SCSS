@@ -1,0 +1,114 @@
+.experience {
+  background: #111827;
+  .container {
+    align-items: center;
+    height: 714px;
+    @include desktop-small {
+      height: 1550px;
+      flex-direction: column;
+    }
+  }
+
+  .container2 {
+    display: flex;
+    gap: 29px;
+    @include desktop-small {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-family: $ff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 85px;
+    padding-bottom: 24px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__text2 {
+    color: $header-link;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 730px;
+    padding-bottom: 80px;
+  }
+
+  .xp1,
+  .xp2,
+  .xp3 {
+    background: $body-bg;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 366px;
+    
+    &__header {
+      font-family: $ff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+
+    &__title {
+      color: #eab308;
+      font-family: $ff;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+    }
+
+    &__subtitle {
+      color: #d1d5db;
+      font-family: $ff;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+
+    &__text {
+      color: #6b7280;
+      font-family: $ff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 286px;
+    }
+  }
+
+  .xp1 {
+    padding: 32px;
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+
+  .xp2 {
+    padding: 32px;
+    &__text {
+      max-width: 272px;
+      .h1 {
+        color: #6b7280;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+    @include desktop-small {
+      padding: -2px;
+    }
+  }
+
+  .xp3 {
+    padding: 32px;
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}

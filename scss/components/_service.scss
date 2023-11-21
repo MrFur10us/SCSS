@@ -11,6 +11,7 @@
   .container2 {
     display: flex;
     gap: 30px;
+    padding-top: 20px;
     @include desktop-small {
       flex-direction: column;
     }
@@ -39,72 +40,11 @@
     }
   }
 
-  .job1 {
-    background: $body-bg;
-    width: 350px;
-    height: 342px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items: center;
-
-    &__title {
-      font-family: $ff;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 41px;
-      max-width: 136px;
-      margin-bottom: 16px;
-      margin-left: 105px;
-      margin-right: 105px;
-      margin-top: 32px;
-    }
-
-    &__text {
-      color: #6b7280;
-      font-family: $ff;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27px;
-      max-width: 286px;
-      margin-left: 40px;
-    }
-  }
-  .job2 {
-    background: $body-bg;
-    width: 350px;
-    height: 342px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    text-align: center;
-    align-items: center;
-
-    &__title {
-      font-family: $ff;
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 41px;
-      max-width: 160px;
-      margin-bottom: 16px;
-      margin-left: 105px;
-      margin-right: 105px;
-      margin-top: 32px;
-    }
-
-    &__text {
-      color: #6b7280;
-      font-family: $ff;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27px;
-      max-width: 286px;
-      margin-left: 40px;
-    }
-  }
+  .job1,
+  .job2,
   .job3 {
     background: $body-bg;
     width: 350px;
-    height: 342px;
     border-radius: 12px;
     margin-bottom: 30px;
     text-align: center;
@@ -115,10 +55,8 @@
       font-size: 26px;
       font-weight: 700;
       line-height: 41px;
-      max-width: 204px;
       margin-bottom: 16px;
-      margin-left: 70px;
-      margin-right: 70px;
+      margin-left: 105px;
       margin-top: 32px;
     }
 
@@ -130,7 +68,39 @@
       line-height: 27px;
       max-width: 286px;
       margin-left: 40px;
-      margin-right: 40px;
+      margin-bottom: 31px;
+    }
+
+    .job1 {
+      &__title {
+        max-width: 136px;
+      }
+
+      &__img {
+        padding-top: 31px;
+      }
+    }
+
+    .job2 {
+      &__title {
+        max-width: 160px;
+        margin-left: 98px;
+      }
+
+      &__img {
+        padding-top: 31px;
+      }
+    }
+
+    .job3 {
+      &__title {
+        max-width: 204px;
+        margin-left: 74px;
+      }
+
+      &__img {
+        padding-top: 31px;
+      }
     }
   }
 }
